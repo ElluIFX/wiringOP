@@ -1221,7 +1221,7 @@ void OrangePiReadAll(void)
 	for (pin = 1 ; pin <= 13; pin += 2)
 
 #elif CONFIG_ORANGEPI_ZERO2
-	for (pin = 1 ; pin <= 34; pin += 2)
+	for (pin = 1 ; pin <= 40; pin += 2)
 #endif
         readallPhys(pin);
 
