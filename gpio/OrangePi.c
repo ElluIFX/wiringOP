@@ -674,27 +674,30 @@ char *physNames [64] =
 #ifdef CONFIG_ORANGEPI_ZERO2
 int physToWpi [64] = 
 {
-	-1, 		  // 0
-	-1, -1, 	  // 1, 2
+	-1,     // 0
+	-1, -1, // 1, 2
 	 0, -1,
 	 1, -1, 	  
-	 2,  3, 	  //7, 8
+	 2,  3, //7, 8
 	-1,  4, 	  
-	 5,  6, 	  //11, 12
+	 5,  6, //11, 12
 	 7, -1, 	  
-	 8,  9, 	  //15, 16
+	 8,  9, //15, 16
 	-1, 10, 	  
-	11, -1, 	  //19, 20
+	11, -1, //19, 20
 	12, 13, 	  
-	14, 15, 	  //23, 24
-	-1, 16, 	  // 25, 26
-	17, -1,
-	18, -1,
+	14, 15, //23, 24
+	-1, 16, // 25, 26
+	17, 18,
 	19, -1,
-	20, -1,
-	
-	-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,   // ... 56
-	-1,  // ... 63
+	20, 21,
+	22, -1, // 33, 34
+    23, 24, // 35, 36
+    25, 26, // 37, 38
+    -1, 27, // 39, 40
+
+	-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,	// ... 56
+	-1, -1, -1, -1, -1, -1, -1,	// ... 63
 
 };
 
@@ -703,22 +706,25 @@ char *physNames [64] =
   	   NULL,
 
  "    3.3V", "5V      ",
- "   SDA.3", "5V      ",
- "   SCL.3", "GND     ",
- "     PC9", "TXD.5   ",
- "     GND", "RXD.5   ",
- "     PC6", "PC11    ",
- "     PC5", "GND     ",
- "     PC8", "PC15    ",
- "    3.3V", "PC14    ",
+ "   SDA.1", "5V      ",
+ "   SCL.1", "GND     ",
+ "     PI0", "TXD.0   ",
+ "     GND", "RXD.0   ",
+ "   TXD.5", "PI1     ",
+ "   RXD.5", "GND     ",
+ "    PI13", "PI14    ",
+ "    3.3V", "PH4     ",
  "  MOSI.1", "GND     ",
- "  MISO.1", "PC7     ",
- "  SCLK.1", "CE.1    ",
- "     GND", "PC10    ",
- "     PC1", "        ",
- "    PI16", "        ",
- "     PI6", "        ",
- "    PH10", "        ",
+ "  MISO.1", "PI6     ",
+ "  SCLK.1", "CS.0    ",
+ "     GND", "CS.1    ",
+ "   SDA.2", "SCL.2   ",
+ "    PI11", "GND     ",
+ "    PI12", "PI5     ",
+ "    PI15", "GND     ",
+ "     PI2", "PH10    ",
+ "    PI16", "PI4     ",
+ "     GND", "PI3     ",
 
 
        NULL, NULL,
@@ -726,19 +732,9 @@ char *physNames [64] =
        NULL, NULL,
        NULL, NULL,
        NULL, NULL,
+  	   NULL, NULL,
        NULL, NULL,
-       NULL, NULL,
-       NULL, NULL,
-       NULL, NULL,
-       NULL, NULL,
-       NULL, NULL,
-       NULL, NULL,
-       NULL, NULL,
-       NULL, NULL,
-       NULL, NULL,
-       NULL, NULL,
-       NULL, NULL,
-       NULL,
+       NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
 };
 #endif
 
